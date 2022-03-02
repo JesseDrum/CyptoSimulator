@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6AF7E9276A5E80002B53BA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6AF7E8276A5E80002B53BA /* Models.swift */; };
+		5B6B0061279F382F0057FA99 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0060279F382F0057FA99 /* APICaller.swift */; };
+		5B6B0064279F417A0057FA99 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0063279F417A0057FA99 /* Coin.swift */; };
+		5B7108972768F07400A1B3DE /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7108962768F07400A1B3DE /* CryptoTableViewCell.swift */; };
+		5B81155027CE70CD00F55828 /* OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81154F27CE70CD00F55828 /* OrderHistoryVC.swift */; };
 		5B9171CA2767BB6F00651B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9171C92767BB6F00651B74 /* AppDelegate.swift */; };
 		5B9171CC2767BB7000651B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9171CB2767BB7000651B74 /* SceneDelegate.swift */; };
 		5B9171CE2767BB7000651B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9171CD2767BB7000651B74 /* ViewController.swift */; };
 		5B9171D12767BB7000651B74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9171CF2767BB7000651B74 /* Main.storyboard */; };
 		5B9171D32767BB7B00651B74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9171D22767BB7B00651B74 /* Assets.xcassets */; };
 		5B9171D62767BB7B00651B74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9171D42767BB7B00651B74 /* LaunchScreen.storyboard */; };
+		5BB82F4627A19C8100A956AF /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB82F4527A19C8100A956AF /* Purchase.swift */; };
+		5BB82F4927A19CA600A956AF /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB82F4827A19CA600A956AF /* Wallet.swift */; };
+		5BF425C127A049E500930A48 /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF425C027A049E500930A48 /* TransferVC.swift */; };
+		5BFD8D5A27A8396300DF4BBD /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD8D5927A8396200DF4BBD /* WalletVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5B81152627C7DD8300F55828 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5B6AF7E8276A5E80002B53BA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5B6B0060279F382F0057FA99 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		5B6B0063279F417A0057FA99 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		5B7108962768F07400A1B3DE /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		5B81154F27CE70CD00F55828 /* OrderHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryVC.swift; sourceTree = "<group>"; };
 		5B9171C62767BB6F00651B74 /* CyptoSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyptoSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9171C92767BB6F00651B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9171CB2767BB7000651B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +51,10 @@
 		5B9171D22767BB7B00651B74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9171D52767BB7B00651B74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B9171D72767BB7B00651B74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB82F4527A19C8100A956AF /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		5BB82F4827A19CA600A956AF /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		5BF425C027A049E500930A48 /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
+		5BFD8D5927A8396200DF4BBD /* WalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +90,16 @@
 				5B9171C92767BB6F00651B74 /* AppDelegate.swift */,
 				5B9171CB2767BB7000651B74 /* SceneDelegate.swift */,
 				5B9171CD2767BB7000651B74 /* ViewController.swift */,
+				5B6B0063279F417A0057FA99 /* Coin.swift */,
+				5B7108962768F07400A1B3DE /* CryptoTableViewCell.swift */,
+				5B6B0060279F382F0057FA99 /* APICaller.swift */,
+				5B6AF7E8276A5E80002B53BA /* Models.swift */,
 				5B9171CF2767BB7000651B74 /* Main.storyboard */,
+				5B81154F27CE70CD00F55828 /* OrderHistoryVC.swift */,
+				5BFD8D5927A8396200DF4BBD /* WalletVC.swift */,
+				5BB82F4527A19C8100A956AF /* Purchase.swift */,
+				5BF425C027A049E500930A48 /* TransferVC.swift */,
+				5BB82F4827A19CA600A956AF /* Wallet.swift */,
 				5B9171D22767BB7B00651B74 /* Assets.xcassets */,
 				5B9171D42767BB7B00651B74 /* LaunchScreen.storyboard */,
 				5B9171D72767BB7B00651B74 /* Info.plist */,
@@ -77,12 +117,15 @@
 				5B9171C22767BB6F00651B74 /* Sources */,
 				5B9171C32767BB6F00651B74 /* Frameworks */,
 				5B9171C42767BB6F00651B74 /* Resources */,
+				5B81152627C7DD8300F55828 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CyptoSimulator;
+			packageProductDependencies = (
+			);
 			productName = CyptoSimulator;
 			productReference = 5B9171C62767BB6F00651B74 /* CyptoSimulator.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +153,8 @@
 				Base,
 			);
 			mainGroup = 5B9171BD2767BB6F00651B74;
+			packageReferences = (
+			);
 			productRefGroup = 5B9171C72767BB6F00651B74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +182,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB82F4927A19CA600A956AF /* Wallet.swift in Sources */,
 				5B9171CE2767BB7000651B74 /* ViewController.swift in Sources */,
+				5BF425C127A049E500930A48 /* TransferVC.swift in Sources */,
+				5BB82F4627A19C8100A956AF /* Purchase.swift in Sources */,
+				5B6B0061279F382F0057FA99 /* APICaller.swift in Sources */,
 				5B9171CA2767BB6F00651B74 /* AppDelegate.swift in Sources */,
+				5B81155027CE70CD00F55828 /* OrderHistoryVC.swift in Sources */,
+				5B6AF7E9276A5E80002B53BA /* Models.swift in Sources */,
+				5B7108972768F07400A1B3DE /* CryptoTableViewCell.swift in Sources */,
 				5B9171CC2767BB7000651B74 /* SceneDelegate.swift in Sources */,
+				5B6B0064279F417A0057FA99 /* Coin.swift in Sources */,
+				5BFD8D5A27A8396300DF4BBD /* WalletVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
