@@ -10,9 +10,12 @@ class TransferVC: UIViewController {
 
     
 //    var history: [String] = []
-    
+    var walletNonDuplicate: [String] = []
     var wallet = Wallet()
+    
+//    let checkName = Dictionary(grouping: wallet.Purchases, by: \.Cname)
 
+    
 
     
     var coin = Coin(name: "coin", price: 1)
@@ -50,7 +53,7 @@ class TransferVC: UIViewController {
             if wallet.balance >= amt
                 {
                 
-                ConfirmAlert(theCoin: theCoin)
+                BuyConfirmAlert(theCoin: theCoin)
             
                 
              }
@@ -73,11 +76,13 @@ class TransferVC: UIViewController {
     }
     
     @IBAction func sellButton(_ sender: Any) {
- 
+        let AmtC = Double(enterAmount.text!)
+        
+        
     }
           
     
-    func ConfirmAlert(theCoin: Purchase)
+    func BuyConfirmAlert(theCoin: Purchase)
     {
         // Create Alert
         let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you want to buy this?", preferredStyle: .alert)
@@ -90,11 +95,12 @@ class TransferVC: UIViewController {
             self.wallet.balance -= theCoin.Camount*theCoin.PurchasePrice
             self.myAmount.text = "Wallet: $\((round(1000*self.wallet.balance)/1000))"
             print(self.wallet.Purchases)
+            
             self.saveWalletToUserDefaults()
             
+           
+            
         })
-
-        // Create Cancel button with action handlder
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
             print("Cancel button tapped")
         }
@@ -105,13 +111,48 @@ class TransferVC: UIViewController {
 
         // Present alert message to user
         self.present(dialogMessage, animated: true, completion: nil)
+        
+    
     }
+    
+//    func SellConfirmAlert(theCoin: Purchase)
+//    {
+//        // Create Alert
+//        let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you want to sell this?", preferredStyle: .alert)
+//
+//        // Create OK button with action handler
+//        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+//            print("Ok button tapped")
+//
+//
+//            self.wallet.Purchases.remove(at: )
+//
+//            self.wallet.balance += Double(theCoin.Camount*self.coin.price)
+//            self.myAmount.text = "Wallet: $\(<#Any.Type#>)"
+//            print(self.wallet.Purchases)
+//            self.saveWalletToUserDefaults()
+//
+//        })
+//
+//        // Create Cancel button with action handlder
+//        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+//            print("Cancel button tapped")
+//        }
+//
+//        //Add OK and Cancel button to an Alert object
+//        dialogMessage.addAction(ok)
+//        dialogMessage.addAction(cancel)
+//
+//        // Present alert message to user
+//        self.present(dialogMessage, animated: true, completion: nil)
+//    }
+//
+//
+//
     
     
     func saveWalletToUserDefaults()
     {
-
-
         do {
             // Create JSON Encoder
             let encoder = JSONEncoder()

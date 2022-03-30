@@ -14,10 +14,13 @@ class WalletVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var WalletTableView: UITableView!
 //    var selectedCoin = Wallet(B: 2, P: [])
 
-
+    var wallet = Wallet()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup
+      
+        
 
         self.WalletTableView.backgroundColor = UIColor.darkGray
 
@@ -26,7 +29,9 @@ class WalletVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
         loadWalletFromUserDefaults()
         WalletTableView.reloadData()
         view.backgroundColor = UIColor.darkGray
-
+        
+    
+        
 //        do {
 //            let data =  try JSONEncoder().encode(Wallet)
 //        } catch {
@@ -34,9 +39,8 @@ class WalletVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
 //        }
         
     }
-    var wallet = Wallet()
+   
 
-  
     override func viewDidDisappear(_ animated: Bool) {
        super.viewDidDisappear(animated)
        self.navigationController?.setNavigationBarHidden(false, animated: true)
@@ -46,15 +50,25 @@ class WalletVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
         loadWalletFromUserDefaults()
         WalletTableView.reloadData()
         print(wallet.Purchases.count)
-     
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true;
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
+//        return wallet.combinedPurchases.count
         return wallet.Purchases.count
         
     }
-
+    
+  
+    
+    
+  
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "walletSegue", sender: self)
     }
@@ -92,6 +106,8 @@ class WalletVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
         } catch {
             print("Unable to Encode Wallet (\(error))")
         }
+     
+        
     }
 
     func loadWalletFromUserDefaults()
@@ -113,9 +129,14 @@ class WalletVC: UIViewController,UITableViewDataSource, UITableViewDelegate{
         }
     }
 
-
-
-
-
+//    func checkDuplitcate()
+//    {
+//        let checkName = Dictionary(grouping: wallet.Purchases, by: \.Cname)
+//
+//
+//
+//    }
+//
+//
 
 }

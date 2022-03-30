@@ -12,6 +12,7 @@
 		5B6B0064279F417A0057FA99 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B0063279F417A0057FA99 /* Coin.swift */; };
 		5B7108972768F07400A1B3DE /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7108962768F07400A1B3DE /* CryptoTableViewCell.swift */; };
 		5B81155027CE70CD00F55828 /* OrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81154F27CE70CD00F55828 /* OrderHistoryVC.swift */; };
+		5B81155427D2685300F55828 /* Orderhistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81155327D2685300F55828 /* Orderhistory.swift */; };
 		5B9171CA2767BB6F00651B74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9171C92767BB6F00651B74 /* AppDelegate.swift */; };
 		5B9171CC2767BB7000651B74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9171CB2767BB7000651B74 /* SceneDelegate.swift */; };
 		5B9171CE2767BB7000651B74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9171CD2767BB7000651B74 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 		5B6B0063279F417A0057FA99 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		5B7108962768F07400A1B3DE /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
 		5B81154F27CE70CD00F55828 /* OrderHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryVC.swift; sourceTree = "<group>"; };
+		5B81155327D2685300F55828 /* Orderhistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orderhistory.swift; sourceTree = "<group>"; };
 		5B9171C62767BB6F00651B74 /* CyptoSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyptoSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9171C92767BB6F00651B74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9171CB2767BB7000651B74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				5BB82F4527A19C8100A956AF /* Purchase.swift */,
 				5BF425C027A049E500930A48 /* TransferVC.swift */,
 				5BB82F4827A19CA600A956AF /* Wallet.swift */,
+				5B81155327D2685300F55828 /* Orderhistory.swift */,
 				5B9171D22767BB7B00651B74 /* Assets.xcassets */,
 				5B9171D42767BB7B00651B74 /* LaunchScreen.storyboard */,
 				5B9171D72767BB7B00651B74 /* Info.plist */,
@@ -191,6 +194,7 @@
 				5B81155027CE70CD00F55828 /* OrderHistoryVC.swift in Sources */,
 				5B6AF7E9276A5E80002B53BA /* Models.swift in Sources */,
 				5B7108972768F07400A1B3DE /* CryptoTableViewCell.swift in Sources */,
+				5B81155427D2685300F55828 /* Orderhistory.swift in Sources */,
 				5B9171CC2767BB7000651B74 /* SceneDelegate.swift in Sources */,
 				5B6B0064279F417A0057FA99 /* Coin.swift in Sources */,
 				5BFD8D5A27A8396300DF4BBD /* WalletVC.swift in Sources */,
